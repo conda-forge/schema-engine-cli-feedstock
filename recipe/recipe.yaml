@@ -1,5 +1,5 @@
 context:
-  version: "6.8.0"
+  version: "6.8.1"
 
 package:
   name: schema-engine-cli
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/prisma/prisma-engines/archive/${{ version }}.tar.gz
-  sha256: 03be0838f06598303667c3150bc8020012048c5044518a9ec6d54c793f256084
+  sha256: 7ca142d51a4039dddead3b427228729640f0c3a7b85d326a581376f6f27fb2a9
 
 build:
   number: 0
