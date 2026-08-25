@@ -74,31 +74,73 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `schema-engine-cli` can be installed with `conda`:
+How to use
+----------
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda install schema-engine-cli
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba install schema-engine-cli
 ```
 
-It is possible to list all of the versions of `schema-engine-cli` available on your platform with `conda`:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+# for adding to your local project
+pixi add schema-engine-cli
+# for installing globally
+pixi global install schema-engine-cli
+```
+
+</details>
+
+Search package versions
+-----------------------
+
+It is possible to list all of the versions of `schema-engine-cli` available on your platform:
+
+<details>
+<summary>With conda</summary>
 
 ```
 conda search schema-engine-cli --channel conda-forge
 ```
 
-or with `mamba`:
+</details>
+
+<details>
+<summary>With mamba</summary>
 
 ```
 mamba search schema-engine-cli --channel conda-forge
 ```
 
-Alternatively, `mamba repoquery` may provide more information:
+</details>
+
+<details>
+<summary>With pixi</summary>
+
+```
+pixi search schema-engine-cli --channel conda-forge
+```
+
+</details>
+
+<details>
+<summary>With mamba repoquery, which may provide more information</summary>
 
 ```
 # Search all versions available on your platform:
@@ -110,6 +152,8 @@ mamba repoquery whoneeds schema-engine-cli --channel conda-forge
 # List dependencies of `schema-engine-cli`:
 mamba repoquery depends schema-engine-cli --channel conda-forge
 ```
+
+</details>
 
 
 About conda-forge
